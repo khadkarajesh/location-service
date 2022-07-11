@@ -16,7 +16,7 @@ services:
   mongo:
     image: mongo:4.4
     volumes:
-      - db_data:/data/db/
+      - ./db_data:/data/db/
     ports:
       - "27017:27017"
     restart: always
